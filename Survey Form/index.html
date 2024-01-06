@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for participating in our survey! Your feedback is valuable to us, and it will help us improve our product. Please take a few minutes to answer the following questions.</p>
+    <form id="survey-form" action="" method="post">
+
+    <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" placeholder="eg:- Jane Loris Fedrick" required></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" name="email" type="email" placeholder="eg:- jane@gmail.com" required></label>
+        <label for="number" id="number-label">Enter Your Age: <input id="number" name="number" type="number" placeholder="Should be atleast 14 years of age." min="14" max="120"></label>
+      <br>
+
+        <label for="dropdown">
+            How satisfied are you with our recent product experience?
+            <select id="dropdown" name="dropdown">
+                <option value="">(select one)</option>
+                <option value="1"> Very Satisfied</option>
+                <option value="2">Not Satisfied</option>
+            </select>
+        </label>
+    <br>
+
+        <label>When considering a purchase, how important is product pricing to you?
+            <label for="very">
+                <input type="radio" class="inline" name="important-type" id="very" value="very" checked> Very Important
+            </label> 
+
+            <label for="not">
+                <input type="radio" class="inline" name="important-type" id="not" value="not"> Not Important
+            </label>
+        </label>
+    <br>
+
+        <label>
+            Which features of our product do you find most valuable? (Select all that apply)
+            <label for="checkbox1">
+                <input type="checkbox" class="inline" name="checkbox" id="checkbox1" value="checkbox1">User-friendly interface
+            </label>
+            <label for="checkbox2">
+                <input type="checkbox" class="inline" name="checkbox" id="checkbox2" value="checkbox2">Durability
+            </label>
+            <label for="checkbox3">
+                <input type="checkbox" class="inline" name="checkbox" id="checkbox3" value="checkbox3"> Quick customer support
+            </label>
+            <label for="checkbox4">
+                <input type="checkbox" class="inline" name="checkbox" id="checkbox4" value="checkbox4"> Attractive design
+            </label>
+        </label>
+     <br>
+
+        <label for="comments">Additional Comments: 
+            <textarea placeholder="I like about the product...." id="comments" rows="3" cols="30" name="comments"></textarea>
+        </label>
+     <br>
+     
+        <button type="submit" id="submit">Submit</button>
+    </fieldset>   
+    </form>
+</body>
+</html>
